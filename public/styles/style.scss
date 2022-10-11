@@ -1,0 +1,27 @@
+@import './variables';
+@import './funcs';
+@import './navigation';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.root {
+    width: 100vw;
+    height: 100%;
+    background: #1A1A1A;
+}
+
+.binding {
+    width: 100%;
+    height: 100%;
+    background: no-repeat linear-gradient(180.67deg, rgba(0, 0, 0, 0) 28.32%, #000000 98.62%), url('https://s3-alpha-sig.figma.com/img/baf4/1960/f6ea2b3001475b70a58cc17b9dbb4807?Expires=1666569600&Signature=Yc4xgNLipvQGcAuVFTB6RrctRp0GR7mzaoRZeFCEs~y3iEx3z1wyTgdxljHyzUwO7TIk7vZBbukBGKWtLDMgb~Q~AoQbRPsYsnnhosh6lgKT~Ly2FAu02uGjOaMUSDKrtPdvMo4~FnddxGQWATcpkTNhrfL3q9ZgIAYnXCGIwVJWd1PAOOBmdXqLL5bfIPbwqHlzFsW~g5t2g5udU2-RzRZcUoDjxj6XWHvChzV9-xFz4nlVaxodwtynrfhxASeaEPNG3CSVMAr632EThqqwqmJcucAXXymnHLIEdyuLsE0Jlj8oyTDa0Q7A1mWkzd3ONDTuR3RacHaGbT3m~6Ef7Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')  ;
+    background-size: cover;
+}

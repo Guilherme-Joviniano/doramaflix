@@ -1,0 +1,50 @@
+
+@mixin flex($justify_content, $align-items, $direction) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align-items;
+    flex-direction: $direction;
+}
+
+@mixin glassEffect($blur) {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    
+    backdrop-filter: blur($blur);
+}
+
+@mixin box-gradient($from, $to, $weight: 0) {
+    $mix-main: mix($from, $to);
+    $mix-sub-from: mix($mix-main, $from);
+    $mix-sub-to: mix($mix-main, $to);
+    
+    box-shadow:
+    // left - start color
+    -1px   0    0 $weight rgba($from, .75),
+    // top left - mix of two colors plus start
+    -1px  -1px  0 $weight rgba($mix-sub-from, .25),
+    // bottom left - mix of two colors plus start
+    -1px   1px  0 $weight rgba($mix-sub-from, .25),
+    // top mid - mix of two colors
+     0    -1px  0 $weight rgba($mix-main, .5),
+    // bottom mid - mix of two colors
+     0     1px  0 $weight rgba($mix-main, .5),
+    // top right - mix of two colors plus end
+     1px  -1px  0 $weight rgba($mix-sub-to, .25),
+    // bottom right - mix of two colors plus end
+     1px   1px  0 $weight rgba($mix-sub-to, .25),
+    // right - end color
+     1px   0    0 $weight rgba($to, .75);
+  }
+
+  @mixin border-gradient($dir, $from, $to, $width) {
+    border-left: $width solid $from;
+    border-right: $width solid $to;
+    background-image:
+      // Needed for both the top and bottom borders
+      -webkit-linear-gradient($dir, $from, $to),
+      -webkit-linear-gradient($dir, $from, $to);
+    background-size: 100% $width;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+  }

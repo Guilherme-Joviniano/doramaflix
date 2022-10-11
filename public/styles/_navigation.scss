@@ -1,0 +1,68 @@
+@import './funcs';
+
+.navigation {
+    position: absolute;
+    right: 45px;
+    top: 250px;
+    width: 80px;
+    border-radius: 16px;
+    @include border-gradient(left, #000000, #151515, 2px);
+    @include glassEffect(21px);
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .list {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        display: flex;
+        margin-bottom: 20px;
+        @include flex(space-between, center, column);
+        a {
+            .item {
+                color: #FFF;
+                font-size: 16px;
+                @include flex(center, center, row);
+                transition: 500ms all ease-in-out;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;      
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                &:hover {
+                    transform: translateY(-10px);
+    
+                }
+                &::before {
+                    content: 'Horror';
+                    position: absolute;
+                    right: 6px;
+                    @include flex(center, center, row);
+                    @include glassEffect(21px);
+                    border-radius: 8px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+                    width: 96px;
+                    height: 36px;
+
+                }
+            }
+       
+        }
+      
+    }
+}
+
+#horror{
+    background-image: linear-gradient(180deg, #908E2A, #F95765);
+} #drama {
+    background-image: radial-gradient( #F95765, #09DC7F,#FF7A47,#FFE374);
+} #funny {
+    background-image: linear-gradient(180deg, #F6EF87,#86DDC2);
+} #romantic {
+    background-image: linear-gradient(180deg, #980712,#FF3F62 );
+}

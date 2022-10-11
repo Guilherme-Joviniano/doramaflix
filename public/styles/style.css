@@ -1,0 +1,108 @@
+.navigation {
+  position: absolute;
+  right: 45px;
+  top: 250px;
+  width: 80px;
+  border-radius: 16px;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #151515;
+  background-image: -webkit-linear-gradient(left, #000000, #151515), -webkit-linear-gradient(left, #000000, #151515);
+  background-size: 100% 2px;
+  background-position: 0 100%, 0 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(21px);
+          backdrop-filter: blur(21px);
+}
+.navigation .logo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.navigation .list {
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.navigation .list a .item {
+  color: #FFF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: 500ms all ease-in-out;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.navigation .list a .item img {
+  width: 40px;
+  height: 40px;
+}
+.navigation .list a .item:hover {
+  transform: translateY(-10px);
+}
+.navigation .list a .item::before {
+  content: "Horror";
+  position: absolute;
+  right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(21px);
+          backdrop-filter: blur(21px);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 96px;
+  height: 36px;
+}
+
+#horror {
+  background-image: linear-gradient(180deg, #908E2A, #F95765);
+}
+
+#drama {
+  background-image: radial-gradient(#F95765, #09DC7F, #FF7A47, #FFE374);
+}
+
+#funny {
+  background-image: linear-gradient(180deg, #F6EF87, #86DDC2);
+}
+
+#romantic {
+  background-image: linear-gradient(180deg, #980712, #FF3F62);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  width: 100vw;
+  height: 100%;
+  background: #1A1A1A;
+}
+
+.binding {
+  width: 100%;
+  height: 100%;
+  background: no-repeat linear-gradient(180.67deg, rgba(0, 0, 0, 0) 28.32%, #000000 98.62%), url("https://s3-alpha-sig.figma.com/img/baf4/1960/f6ea2b3001475b70a58cc17b9dbb4807?Expires=1666569600&Signature=Yc4xgNLipvQGcAuVFTB6RrctRp0GR7mzaoRZeFCEs~y3iEx3z1wyTgdxljHyzUwO7TIk7vZBbukBGKWtLDMgb~Q~AoQbRPsYsnnhosh6lgKT~Ly2FAu02uGjOaMUSDKrtPdvMo4~FnddxGQWATcpkTNhrfL3q9ZgIAYnXCGIwVJWd1PAOOBmdXqLL5bfIPbwqHlzFsW~g5t2g5udU2-RzRZcUoDjxj6XWHvChzV9-xFz4nlVaxodwtynrfhxASeaEPNG3CSVMAr632EThqqwqmJcucAXXymnHLIEdyuLsE0Jlj8oyTDa0Q7A1mWkzd3ONDTuR3RacHaGbT3m~6Ef7Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
